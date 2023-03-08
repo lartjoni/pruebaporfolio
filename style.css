@@ -1,12 +1,44 @@
 /*estilo navegador */
 
-.card-img-top{
-width: 100%;
+
+
+.card-img-top {
+    width: 100%;
 }
-.tipologo{
+
+.tipologo {
     width: 20%;
-    margin-top: -10%;
+    margin-top: -13%;
+    margin-left: 1%;
     border-radius: 50%;
     box-shadow: 0px 2px 10px 1px red;
 }
 
+.fotoPincel{
+    margin-left: 18%;
+    margin-top: -2% ;
+    margin-bottom: 2%;
+}
+
+/* los de "transition" especifica que cambios realiza cuando cursor se posiciona sobre el boton. */
+
+button{
+    border-radius: 100%;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.bi-pencil{
+    font-size: 120%;
+    transition: all 0.2s ease-in-out;
+}
+
+/* "hover" se usa para que entienda el cursor */
+
+button:hover {    
+    font-size: 120%;
+    background-color: gray;
+    color: white;
+    border-radius: 100%;
+
+}
