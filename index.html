@@ -13,327 +13,354 @@
 </head>
 
 <body>
-    <div>
-        <section class="navegador-sup d-flex flex-columnderecha">
-            <ul class="nav nav-pills nav-fill">
-                <li class="nav-item">
-                    <img class="iconoargprogram d-flex flex-wrap" src="" alt="">icono arg program</img>
-                </li>
-                <li class="nav-item">
-                    <a class="espacio-vacio" href="#">espacio vacio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="icono-redes d-flex flex-wrap" href="#"></a>
-                    <a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-facebook"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="icono-redes" href="#"></a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-instagram"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="icono-redes d-flex flex-wrap" href="#"></a>
-                    <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-twitter"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled d-flex flex-wrap">cuenta</a>
-                </li>
-            </ul>
-        </section>
-    </div>
 
-    <div>
-        <div class="card">
-            <img src="fondo1.jpg" class="card-img-top" alt="fondo montaña">
-
-            <img src="persona.jpg" class="tipologo" alt="persona">
-            <div class="fotoPincel">
-                <button tipe="button">
-                    <i class="bi bi-pencil"></i>
-                </button>
+    <nav class="navbar-expand-lg sticky-top">
+        <div class="nav">
+            <div class="logo-navegador">
+                <img class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                <div class="texto-navegador">Argentina Programa</div>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">Milo dEscorpio</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary"> Tengo interés en</a>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+            <div class="icono-redes" href="#">
+                <a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-twitter"></i></a>
+            </div>
+            <button type="button" class="btn btn-outline-success">Login</button>
+        </div>
+    </nav>
+    <!-- (d-flex  o (flex-wrap o -nowrap o wrap-reverse)  o (align-items-center o -baseline o -strech) o (justify-conent-evenly  o -between-->
+
+    <div class="card">
+        <img src="fondo1.jpg" class="card-img-top" alt="fondo montaña">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10">
+                    <div class="d-flex">
+                        <img src="persona.jpg" class="carnet" alt="persona">
+                        <div class="fotoPincel">
+                            <button tipe="button">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Milo dEscorpio</h5>
+                        <span>Full Stack
+                            Developer Jr</span>
+                        <p class="card-text">Informatico en Curso <br>Buenos Aires (Argentina) <a href="#"
+                                class="card-link">informacion de contacto</a></br></p>
+                    </div>
+                </div>
+                <div id="logo-derecho" class="col-xs-12 col-sm-2">
+                    <img class="logo" id="logo-derecho-lugar" src="logo-argprog.png" alt="logo arg programa">Argentina
+                    Programa</img>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="btn btn-primary">Tengo interés en</a>
+                <a href="#" class="card-link">Añadir Sección</a>
+                <a href="#" class="card-link">Mas</a>
             </div>
         </div>
     </div>
 
     <div class="card">
-        <div class="container">
+        <div class="card-body">
 
-            <div class="card-body">
+            <div class="row">
 
-                <div class="row">
-
-                    <div class="col-10" medio>
-                        <h5 class="card-title">Acerca de</h5>
-                    </div>
-                    <div class="col-2" editores>
-                        <button tipe="button">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                    </div>
-
-
-
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                        of the card's
-                        content.</p>
+                <div class="col-10" medio>
+                    <h5 class="card-title">Acerca de</h5>
                 </div>
+                <div class="col-2" editores>
+                    <button tipe="button">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                    of the card's
+                    content.</p>
             </div>
         </div>
     </div>
 
     <div class="card">
-        <div class="container">
+        <div class="card-body">
 
-            <div class="card-body">
-
-                <div class="row">
-                    <div class="col-10" medio>
-                        <h5 class="card-title">Experiencia</h5>
-                    </div>
-                    <div class="col-2" editores>
-                        <button tipe="button">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                    </div>
+            <div class="row">
+                <div class="col-10" medio>
+                    <h3 class="card-title">Experiencia</h3>
                 </div>
-
-                <div class="row">
-                    <div class="col-2" logo>
-
-                    </div>
-                    <div class="col-8" medio>
-                        <h5 class="card-title">Lugares </h5>
-                    </div>
-                    <div class="col-2 editores"><button tipe="button">
-                            <i class="bi bi-pencil"></i>
-                        </button>
-                        <button tipe="button">
-                            <i class="bi bi-trash3"></i>
-                        </button>
-                    </div>
-
-                    <div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's
-                            content.</p>
-
-                    </div>
+                <div class="col-2" editores>
+                    <button tipe="button">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
                 </div>
             </div>
-            <div class="card-body">
 
-                <div class="row">
-                    <div class="col-10" medio>
-                        <h5 class="card-title">Experiencia</h5>
-                    </div>
-                    <div class="col-2" editores>
-                        <button tipe="button">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                    </div>
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
+
+                    <p>seccion, expecialidades</p>
+                    <p><strong>fechas</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+                    <button tipe="button">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button">
+                        <i class="bi bi-trash3"></i>
+                    </button>
                 </div>
 
-                <div class="row">
-                    <div class="col-2" logo>
-
-                    </div>
-                    <div class="col-8" medio>
-                        <h5 class="card-title">Lugares </h5>
-                    </div>
-                    <div class="col-2 editores"><button tipe="button">
-                            <i class="bi bi-pencil"></i>
-                        </button>
-                        <button tipe="button">
-                            <i class="bi bi-trash3"></i>
-                        </button>
-                    </div>
-
-                    <div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's
-                            content.</p>
-
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-10" medio>
+                    <h3 class="card-title">Educacion</h3>
                 </div>
-                <div class="row">
-                    <div class="col-2" logo>
-
-                    </div>
-                    <div class="col-8" medio>
-                        <h5 class="card-title">Lugares </h5>
-                    </div>
-                    <div class="col-2 editores"><button tipe="button">
-                            <i class="bi bi-pencil"></i>
-                        </button>
-                        <button tipe="button">
-                            <i class="bi bi-trash3"></i>
-                        </button>
-                    </div>
-
-                    <div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's
-                            content.</p>
-
-                    </div>
+                <div class="col-2" editores>
+                    <button tipe="button">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
                 </div>
-                <div class="row">
-                    <div class="col-2" logo>
+            </div>
 
-                    </div>
-                    <div class="col-8" medio>
-                        <h5 class="card-title">Lugares </h5>
-                    </div>
-                    <div class="col-2 editores"><button tipe="button">
-                            <i class="bi bi-pencil"></i>
-                        </button>
-                        <button tipe="button">
-                            <i class="bi bi-trash3"></i>
-                        </button>
-                    </div>
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
 
-                    <div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                    </div>
-10            </div>
+                    <p>seccion, expecialidades</p>
+                    <p><strong>fechas</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+                    <button tipe="button">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
+
+                    <p>seccion, expecialidades</p>
+                    <p><strong>fechas</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+                    <button tipe="button">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
+
+                    <p>seccion, expecialidades</p>
+                    <p><strong>fechas</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+                    <button tipe="button">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+
             </div>
         </div>
-
     </div>
 
     <!--plus-lg es signo + , tendria que estar a editores de titulo osea de "card-header"(si borro ese card-header saca el sombreado gris del titulo pero la letra queda igual o mas chica del titulo del card-body, buscar en boostrap otros ejemplos)
             ¿hacer row y columnderechaa? -->
 
     <div class="card">
-        <div class="container">
-
-            <div class="card-body">
-
-                <div class="row">
-                    <div class="col-10" medio>
-                        <h5 class="card-title">Hard Skills & Soft Skills</h5>
-                    </div>
-                    <div class="col-2" editores>
-                        <button tipe="button">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                    </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-10" medio>
+                    <h5 class="card-title">Hard Skills & Soft Skills</h5>
                 </div>
-
-                <div class="row">
-                    <div class="col-2" logo>
-
-                    </div>
-                    <div class="col-8" medio>
-                        <p>texto referencia a barra</p>
+                <div class="col-2" editores>
+                    <button tipe="button">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" logo>
+                </div>
+                <div class="col-8" medio>
+                    <p>texto referencia a barra</p>
                     <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
-                    </div>
-                    </div>
-                    <div class="col-2 editores"><button tipe="button">
-                            <i class="bi bi-pencil"></i>
-                        </button>
-                        <button tipe="button">
-                            <i class="bi bi-trash3"></i>
-                        </button>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-2" logo>
-
-                    </div>
-                    <div class="col-8" medio>
-                        <p>texto referencia a barra</p>
+                <div class="col-2 editores"><button tipe="button">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" logo>
+                </div>
+                <div class="col-8" medio>
+                    <p>texto referencia a barra</p>
                     <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">
+                        </div>
                     </div>
-                    </div>
-                    <div class="col-2 editores"><button tipe="button">
-                            <i class="bi bi-pencil"></i>
-                        </button>
-                        <button tipe="button">
-                            <i class="bi bi-trash3"></i>
-                        </button>
-                    </div>
+                </div>
+                <div class="col-2 editores"><button tipe="button">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button">
+                        <i class="bi bi-trash3"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
     <div class="card">
-        <div class="container">
+        <div class="card-body">
 
-            <div class="card-body">
-
-                <div class="row">
-                    <div class="col-10" medio>
-                        <h5 class="card-title">Proyectos</h5>
-                    </div>
-                    <div class="col-2" editores>
-                        <button tipe="button">
-                            <i class="bi bi-plus-lg"></i>
-                        </button>
-                    </div>
+            <div class="row">
+                <div class="col-10" medio>
+                    <h3 class="card-title">Proyectos</h3>
                 </div>
-
-                <div class="row">
-                    <div class="col-2" logo>
-
-                    </div>
-                    <div class="col-8" medio>
-                        <h5 class="card-title">Lugares </h5>
-                    </div>
-                    <div class="col-2 editores"><button tipe="button">
-                            <i class="bi bi-pencil"></i>
-                        </button>
-                        <button tipe="button">
-                            <i class="bi bi-trash3"></i>
-                        </button>
-                    </div>
-
-                    <div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's
-                            content.</p>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2" logo>
-
-                    </div>
-                    <div class="col-8" medio>
-                        <h5 class="card-title">Lugares </h5>
-                    </div>
-                    <div class="col-2 editores"><button tipe="button">
-                            <i class="bi bi-pencil"></i>
-                        </button>
-                        <button tipe="button">
-                            <i class="bi bi-trash3"></i>
-                        </button>
-                    </div>
-
-                    <div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's
-                            content.</p>
-
-                    </div>
+                <div class="col-2" editores>
+                    <button tipe="button">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
                 </div>
             </div>
+
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
+                    <p><strong>Some quick example text to build on the card title and make up the bulk
+                            of the card's
+                            content.</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+                    <button tipe="button">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
+                    <p><strong>Some quick example text to build on the card title and make up the bulk
+                            of the card's
+                            content.</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+                    <button tipe="button">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+
+            </div>
+
         </div>
     </div>
+
+    <!--este para practicar arreglos
+    <div class="card">
+        <div class="card-body">
+
+            <div class="row">
+                <div class="col-10" medio>
+                    <h3 class="card-title">Experiencia o Educacion</h3>
+                </div>
+                <div class="col-2" editores>
+                    <button tipe="button">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
+
+                    <p>seccion, expecialidades</p>
+                    <p><strong>fechas</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+                    <button tipe="button">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+-->
 
 
     <!--ver cual usar..el primer script o los ultimos 2-->

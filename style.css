@@ -1,44 +1,180 @@
 /*estilo navegador */
 
+.nav {
+    background-color: rgba(0, 0, 0, 0.767);
+    padding: 1%;
+}
 
+.logo-navegador {
+    display: flex;
+
+}
+
+/* 
+.logo:hover {
+    font-size: 120%;
+    border: 2px solid rgb(219, 30, 30);
+    border-radius: 100%;
+
+}
+*/
+
+.logo {
+    margin: 5px;
+    border-radius: 10%;
+    border: 2px solid blue;
+}
+
+.texto-navegador {
+    margin: auto;
+    color: rgba(248, 203, 0, 0.76);
+}
+
+/* (margin-left:auto) coloco iconos y boton a la derecha*/
+.icono-redes {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.icono-redes a {
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.icono-redes i {
+    color: aqua;
+    font-size: 20px;
+    transition: all 0.2s ease-in;
+}
+
+
+.icono-redes i:hover {
+    font-size: 120%;
+    color: coral;
+    border-radius: 100%;
+
+}
+
+.card {
+    margin: 1%;
+}
 
 .card-img-top {
     width: 100%;
 }
 
-.tipologo {
-    width: 20%;
-    margin-top: -13%;
-    margin-left: 1%;
+.carnet {
+    width: 100px;
+    margin-top: -60px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
     border-radius: 50%;
     box-shadow: 0px 2px 10px 1px red;
 }
 
-.fotoPincel{
-    margin-left: 18%;
-    margin-top: -2% ;
-    margin-bottom: 2%;
+#logo-derecho {
+    align-self: end;
 }
+
+#logo-derecho-lugar {
+    display: flex;
+    width: 50px;
+    border: 2px solid blue;
+}
+
+.fotoPincel {
+    margin-top: 10px;
+    padding-top: 25px;
+}
+
+
 
 /* los de "transition" especifica que cambios realiza cuando cursor se posiciona sobre el boton. */
 
-button{
+button {
     border-radius: 100%;
     color: black;
     transition: all 0.2s ease-in-out;
 }
 
-.bi-pencil{
+.bi-pencil {
     font-size: 120%;
     transition: all 0.2s ease-in-out;
 }
 
 /* "hover" se usa para que entienda el cursor */
 
-button:hover {    
+button:hover {
     font-size: 120%;
     background-color: gray;
     color: white;
     border-radius: 100%;
 
 }
+
+#filaEspacio {
+    margin: 20px;
+}
+
+#lugares-logo {
+    border: 2px solid rgb(12, 209, 12);
+}
+
+p {
+    margin: 0px;
+}
+
+#editores {
+    padding-left: 40px;
+}
+
+/* usó el de masterclass en su css dispersado en varios
+varios {
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+    display: flex;
+    display: inline;
+    align-self: center;
+    list-style: none inside;
+    line-height: 1.25;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+    touch-action: manipulation;
+    flex-grow: 1;
+    font-size: 1rem;
+    font-weight: 500;
+    vertical-align: baseline;
+    z-index: 1;
+    margin-top: 100px;
+    margin-right: 8px;
+    color: chartreuse;
+    border-radius: 32px 32px 0 0;
+    border-radius: 50%;
+    padding: 0;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+*/
+
+/* .row {
+    border: 2px solid blue;
+}
+
+h5 {
+    background-color: brown;
+    border: 2px solid violet;
+}
+
+.col-xs-12 {
+    background-color: aqua;
+}
+
+.aver {
+    background-color: green;
+} */
