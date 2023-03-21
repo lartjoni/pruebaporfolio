@@ -75,16 +75,21 @@
                 <div class="col-10" medio>
                     <h5 class="card-title">Acerca de</h5>
                 </div>
-                <div class="col-2" editores>
+                <div class="col-2" onclick="cambiar_parrafo()" editores>
                     <button tipe="button">
                         <i class="bi bi-plus-lg"></i>
                     </button>
                 </div>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                <p id="text-acercade" class="card-text">Some quick example text to build on the card title and make up the bulk
                     of the card's
                     content.</p>
             </div>
+            <div>
+                <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none;">
+            </div>
         </div>
+ <!--tarea: buscar como cambiar el texto dentro del boton ¿sera serca de aca o en el script?-->
+        <input type="file" id="file1" onchange="showFile(this)">
     </div>
 
     <div class="card">
@@ -362,9 +367,63 @@
     </div>
 -->
 
+<script src="codigo.js"></script>
+<script src="objetos.js"></script>
 
-    <!--ver cual usar..el primer script o los ultimos 2-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+<!--este el ejemplo de masterclass mod2 (lo puso en el html, y yo lo copié a la hoja de codigo.js sin los <script>  )
+    <script>
+    //funcion que
+    //cambia el estilo del input a visible
+    //toma el valor del texto del parrafo con id "text-acercade"
+    //lo muestra en consola
+    function cambiar_parrafo(){
+        document.getElementById("edit-acercade").style.display="block";
+        let texto = document.getElementsById("text-acercade").innerText;
+        console.log(texto);
+    };
+
+    function myFunction2(valor){
+        document.getElementById("text-acercade").innerText=valor;
+    }
+
+    function logMessage(message) {
+        console.log(message + "<br>");
+    }
+
+    //controla si se presiona un enter
+let textarea=document.getElementById("edit-acercade")
+textarea.addEventListener('keyup', (e) => {
+    logMessage(`Key "${e.key}" released [envent: keyup]`);
+    if (e.key=="Enter"){
+        document.getElementById("edit-acercade").style.display="none"}
+    });
+
+    //carga el contenido de un archivo de texto
+    //y lo muestra en el parrafo
+    function showFile(input) {
+        let file = input.files[0];
+        alert(`File name: ${file.name}`); //e.g my.png
+        alert(`Last modified: ${file.lastModified}`); // e.g 1552830408824
+
+        let reader = new FileReader();
+        reader.readAsText(file);
+        reader.onload = function() {
+            console.log(reader.result);
+            document.getElementById("text-acercade").innerText=reader.result;
+        };
+        reader.onerror = function() {
+            console.log(reader.error);
+        };
+    }
+
+</script>
+-->
+
+    <!--ver cual usar..el primer script (se agrega si usas ventanas emergentes e informacion de herramientas) o los ultimos 2 (se usan juntos o no..)-->
+
+    <!--y en el ejemplo de masterclass mod2 estos 3 link de script los tiene comentados, no funcionando, (y yo probe si cambiaba algo en el input onchlick etc si comento estos link.. y funciono igual, entonces esos link script...min.js.. ¿seran para otro metodologia?)
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
@@ -374,6 +433,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
