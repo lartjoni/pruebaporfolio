@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>PruebaPorfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!--nav-->
 
     <nav class="navbar-expand-lg sticky-top">
         <div class="nav">
@@ -29,25 +32,10 @@
             </div>
             <!--icono tipo boton enlazado con modal-1 para Iniciar Sesion-->
             <i class="bi bi-person-circle" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                
+
             </i>
         </div>
     </nav>
-   
-                <!--asi sera lo que envuelve a icono login?
-<span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="left" data-bs-content="Desconectado">
-</span>
- <i class="bi bi-person-circle" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-ventana aparece abajo
-<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
-  Popover on left
-</button>
-                    poper-disable-ventana-derecha-hover
-                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
-  <button class="btn btn-primary" type="button" disabled>Disabled button</button>
-</span>
-                -->
-
 
     <!-- Modal-1 -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -79,7 +67,7 @@ ventana aparece abajo
         </div>
     </div>
 
-    <!-- (d-flex  o (flex-wrap o -nowrap o wrap-reverse)  o (align-items-center o -baseline o -strech) o (justify-conent-evenly  o -between-->
+    <!--1°card: banner, foto, info pers, icono y boton edicion-->
 
     <div class="card">
         <img src="fondo1.jpg" class="card-img-top" alt="fondo montaña">
@@ -115,6 +103,8 @@ ventana aparece abajo
         </div>
     </div>
 
+    <!--2°card: acerca de mi y ejemplo de "funcion" edicion-->
+
     <div class="card">
         <div class="card-body">
 
@@ -137,9 +127,10 @@ ventana aparece abajo
                 <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none;">
             </div>
         </div>
-        <!--tarea: buscar como cambiar el texto dentro del boton ¿sera serca de aca o en el script?-->
         <input type="file" id="file1" onchange="showFile(this)">
     </div>
+
+    <!--3°card: experiencia y educacion boton edicion-->
 
     <div class="card">
         <div class="card-body">
@@ -257,8 +248,7 @@ ventana aparece abajo
         </div>
     </div>
 
-    <!--plus-lg es signo + , tendria que estar a editores de titulo osea de "card-header"(si borro ese card-header saca el sombreado gris del titulo pero la letra queda igual o mas chica del titulo del card-body, buscar en boostrap otros ejemplos)
-            ¿hacer row y columnderechaa? -->
+    <!--4°card: habilidades, barra progres y boton edicion-->
 
     <div class="card">
         <div class="card-body">
@@ -312,6 +302,9 @@ ventana aparece abajo
             </div>
         </div>
     </div>
+
+    <!--5°card: proyectos y boton edicion-->
+
     <div class="card">
         <div class="card-body">
 
@@ -374,110 +367,27 @@ ventana aparece abajo
         </div>
     </div>
 
-    <!--este para practicar arreglos
-    <div class="card">
-        <div class="card-body">
-            <div class="row">
-                <div class="col-10" medio>
-                    <h3 class="card-title">Experiencia o Educacion</h3>
-                </div>
-                <div class="col-2" editores>
-                    <button tipe="button">
-                        <i class="bi bi-plus-lg"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="row" id="filaEspacio">
-                <div class="col-xs-12 col-sm-2" logo>
-                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
-                </div>
-                <div class="col-xs-12 col-sm-8" id=medio>
-                    <h4 class="card-title">Nombre de Lugares </h4>
-                    <p>seccion, expecialidades</p>
-                    <p><strong>fechas</strong></p><strong>
-                    </strong>
-                </div>
-                <div class="col-xs-12 col-sm-2" id=editores>
-                    <button tipe="button">
-                        <i class="bi bi-pencil"></i>
-                    </button>
-                    <button tipe="button">
-                        <i class="bi bi-trash3"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
--->
+    <!--footer-->
+
+    <footer>
+
+    </footer>
+    
+
+
+    <!--script referencia a js-->
 
     <script src="codigo.js"></script>
     <script src="objetos.js"></script>
 
-    <!--este el ejemplo de masterclass mod2 (lo puso en el html, y yo lo copié a la hoja de codigo.js sin los <script>  )
-    <script>
-    //funcion que
-    //cambia el estilo del input a visible
-    //toma el valor del texto del parrafo con id "text-acercade"
-    //lo muestra en consola
-    function cambiar_parrafo(){
-        document.getElementById("edit-acercade").style.display="block";
-        let texto = document.getElementsById("text-acercade").innerText;
-        console.log(texto);
-    };
-    function myFunction2(valor){
-        document.getElementById("text-acercade").innerText=valor;
-    }
-    function logMessage(message) {
-        console.log(message + "<br>");
-    }
-    //controla si se presiona un enter
-let textarea=document.getElementById("edit-acercade")
-textarea.addEventListener('keyup', (e) => {
-    logMessage(`Key "${e.key}" released [envent: keyup]`);
-    if (e.key=="Enter"){
-        document.getElementById("edit-acercade").style.display="none"}
-    });
-    //carga el contenido de un archivo de texto
-    //y lo muestra en el parrafo
-    function showFile(input) {
-        let file = input.files[0];
-        alert(`File name: ${file.name}`); //e.g my.png
-        alert(`Last modified: ${file.lastModified}`); // e.g 1552830408824
-        let reader = new FileReader();
-        reader.readAsText(file);
-        reader.onload = function() {
-            console.log(reader.result);
-            document.getElementById("text-acercade").innerText=reader.result;
-        };
-        reader.onerror = function() {
-            console.log(reader.error);
-        };
-    }
-</script>
--->
+    <!-- src de script-->
 
-    <!--ver cual usar..el primer script (se agrega si usas ventanas emergentes e informacion de herramientas) o los ultimos 2 (se usan juntos o no..)-->
-
-    <!--y en el ejemplo de masterclass mod2 estos 3 link de script los tiene comentados, no funcionando, (y yo probe si cambiaba algo en el input onchlick etc si comento estos link.. y funciono igual, entonces esos link script...min.js.. ¿seran para otro metodologia?)
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
         crossorigin="anonymous"></script>
-    -->
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-<!--
-esto estaba junto con la base q angular crea con ng new...
-dentro de app.component.html
-<router-outlet></router-outlet>
--->

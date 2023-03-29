@@ -64,8 +64,10 @@
 }
 
 .modal-content {
-    border:  solid 2px cornflowerblue;
-} 
+    border: solid 2px cornflowerblue;
+}
+
+/*estilos cards generales y botones*/
 
 .card {
     margin: 1%;
@@ -140,48 +142,3 @@ p {
 #editores {
     padding-left: 40px;
 }
-
-/* usó el de masterclass en su css dispersado en varios
-varios {
-    width: 32px;
-    height: 32px;
-    text-decoration: none;
-    display: flex;
-    display: inline;
-    align-self: center;
-    list-style: none inside;
-    line-height: 1.25;
-    justify-content: space-between;
-    position: relative;
-    flex-direction: column;
-    box-sizing: border-box;
-    touch-action: manipulation;
-    flex-grow: 1;
-    font-size: 1rem;
-    font-weight: 500;
-    vertical-align: baseline;
-    z-index: 1;
-    margin-top: 100px;
-    margin-right: 8px;
-    color: chartreuse;
-    border-radius: 32px 32px 0 0;
-    border-radius: 50%;
-    padding: 0;
-    word-wrap: break-word;
-    word-break: break-word;
-}
-*/
-
-/* .row {
-    border: 2px solid blue;
-}
-h5 {
-    background-color: brown;
-    border: 2px solid violet;
-}
-.col-xs-12 {
-    background-color: aqua;
-}
-.aver {
-    background-color: green;
-} */
