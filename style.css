@@ -57,6 +57,17 @@
 
 }
 
+.bi-person-circle {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 2rem;
+    color: red;
+}
+
+.modal-content {
+    border:  solid 2px cornflowerblue;
+} 
+
 .card {
     margin: 1%;
 }
