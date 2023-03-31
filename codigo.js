@@ -6,6 +6,8 @@
 
 //funcion modal-4
 
+//funcion modal-5
+
 //funcion que
 //cambia el estilo del input a visible
 //toma el valor del texto del parrafo con id "text-acercade"
