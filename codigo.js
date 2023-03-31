@@ -1,3 +1,10 @@
+//funcion modal-1
+
+//funcion modal-2
+
+//funcion modal-3
+
+//funcion modal-4
 
 //funcion que
 //cambia el estilo del input a visible

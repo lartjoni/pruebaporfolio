@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" mediometa http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PruebaPorfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--nav-->
+
+    <nav class="navbar-expand-lg sticky-top">
+        <div class="nav">
+            <div class="logo-navegador">
+                <img class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                <div class="texto-navegador">Argentina Programa</div>
+            </div>
+            <div class="icono-redes" href="#">
+                <a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-twitter"></i></a>
+            </div>
+            <!--boton desplegable Cerrar Sesion-->
+            <i class="bi bi-person-circle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true"
+                aria-expanded="false">
+                <div class="dropdown-menu">
+                    <div class="dropdown-item text-center"><strong>Cerrar Sesion<br>Click aqui</strong></div>
+                </div>
+            </i>
+
+        </div>
+    </nav>
+
+    <!-- boton desplegable para cerrar sesion al final del nav  -->
+
+
+
+    <!-- Modal-3 agregar seccion+-Modal  (y borrar x posicion) en 3°card-->
+
+    <div class="modal fade" id="seccion+-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar o Borrar Seccion</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Posicion
+                                </button>
+                                <div class="dropdown-menu">
+
+                                    <div class="btn-group-vertical" role="group"
+                                        aria-label="Vertical radio toggle button group">
+                                        <h5>click para seleccionar</h5>
+
+                                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline" for="vbtn-radio1">Primero</label>
+
+                                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline" for="vbtn-radio2">Medio</label>
+
+                                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline" for="vbtn-radio3">Ultimo</label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Agregar</button>
+                    <button type="button" class="btn btn-primary">Borrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal-4 botonEditar agrega o reeplaza °3card -->
+
+    <div class="modal fade" id="botonEditarModal" tabindex="-1" aria-labelledby="botonEditarModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="botonEditarModalLabel">Elegir</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Opciones
+                                </button>
+                                <div class="dropdown-menu">
+
+                                    <div class="btn-group-vertical" role="group"
+                                        aria-label="Vertical radio toggle button group">
+                                        <h5>click para seleccionar</h5>
+
+                                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline" for="vbtn-radio1">Logo</label>
+
+                                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline" for="vbtn-radio2">Nombre del Lugar</label>
+
+                                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline" for="vbtn-radio3">Texto</label>
+
+                                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline" for="vbtn-radio4">Fechas</label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="text" class="col-form-label">Escribir a Mano, si no...</label>
+                            <textarea class="form-control" id="text"
+                                placeholder="Escribir aqui nombre del titulo o texto o fechas"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFileSm" class="form-label">...agregar como archivo</label>
+                            <input class="form-control form-control-sm" id="formFileSm" type="file">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Agregar</button>
+                    <button type="button" class="btn btn-primary">Reemlazar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal-5 botonBorrarModal 3°card  -->
+
+    <div class="modal fade" id="botonBorrarModal" tabindex="-1" aria-labelledby="botonBorrarModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="botonBorrarModalLabel">Elegir elementos a eliminar</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="text-center">
+                        <div class="mb-3">
+
+                            <div class="btn-group-vertical" role="group" aria-label="Vertical checkbox button group">
+
+                                <h5>Opcion Multiple </h5>
+
+                                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck1">Logo</label>
+
+                                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck2">Nombre de
+                                    Establecimiento</label>
+
+                                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck3">Texto</label>
+
+                                <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck4">Fecha</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Borrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--modal para barra y fotocarnet y fondo-->
+
+    <!--esto es para editor foto baner lapiz flotando derecha arriba y ensima de foto
+        <div class="position-relative">
+  <div class="position-absolute top-0 start-0"></div>
+    -->
+
+
+
+    <!--1°card: banner, foto, info pers, icono y boton edicion-->
+
+    <div class="card">
+        <img src="fondo1.jpg" class="card-img-top" alt="fondo montaña">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10">
+                    <div class="d-flex">
+                        <img src="persona.jpg" class="carnet" alt="persona">
+                        <div class="fotoPincel">
+                            <button tipe="button">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Milo dEscorpio</h5>
+                        <span>Full Stack
+                            Developer Jr</span>
+                        <p class="card-text">Informatico en Curso <br>Buenos Aires (Argentina) <a href="#"
+                                class="card-link">informacion de contacto</a></br></p>
+                    </div>
+                </div>
+                <div id="logo-derecho" class="col-xs-12 col-sm-2">
+                    <img class="logo" id="logo-derecho-lugar" src="logo-argprog.png" alt="logo arg programa">Argentina
+                    Programa</img>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="btn btn-primary">Tengo interés en</a>
+                <a href="#" class="card-link">Añadir Sección</a>
+                <a href="#" class="card-link">Mas</a>
+            </div>
+        </div>
+    </div>
+
+    <!--2°card: acerca de mi y ejemplo de "funcion" edicion-->
+
+    <div class="card">
+        <div class="card-body">
+
+            <div class="row">
+
+                <div class="col-10" medio>
+                    <h5 class="card-title">Acerca de</h5>
+                </div>
+                <div class="col-2" onclick="cambiar_parrafo()" editores>
+                    <button tipe="button">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                </div>
+                <p id="text-acercade" class="card-text">Some quick example text to build on the card title and make up
+                    the bulk
+                    of the card's
+                    content.</p>
+            </div>
+            <div>
+                <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none;">
+            </div>
+        </div>
+        <input type="file" id="file1" onchange="showFile(this)">
+    </div>
+
+    <!--3°card: experiencia y educacion boton edicion-->
+
+    <div class="card">
+        <div class="card-body">
+
+            <div class="row">
+                <div class="col-10" medio>
+                    <h3 class="card-title">Experiencia</h3>
+                </div>
+                <div class="col-2" editores>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#seccion+-Modal"
+                        data-bs-whatever="QUEHACE?@mdo">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
+
+                    <p>seccion, expecialidades</p>
+                    <p><strong>fechas</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#botonEditarModal"
+                        data-bs-whatever="SACARESTO?@mdo">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#botonBorrarModal"
+                        data-bs-whatever="QUITARESTO?@mdo">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-10" medio>
+                    <h3 class="card-title">Educacion</h3>
+                </div>
+                <div class="col-2" editores>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#seccion+-Modal"
+                        data-bs-whatever="QUEHACE?@mdo">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
+
+                    <p>seccion, expecialidades</p>
+                    <p><strong>fechas</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#botonEditarModal"
+                        data-bs-whatever="SACARESTO?@mdo">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#botonBorrarModal"
+                        data-bs-whatever="QUITARESTO?@mdo">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
+
+                    <p>seccion, expecialidades</p>
+                    <p><strong>fechas</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#botonEditarModal"
+                        data-bs-whatever="SACARESTO?@mdo">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#botonBorrarModal"
+                        data-bs-whatever="QUITARESTO?@mdo">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
+
+                    <p>seccion, expecialidades</p>
+                    <p><strong>fechas</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#botonEditarModal"
+                        data-bs-whatever="SACARESTO?@mdo">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#botonBorrarModal"
+                        data-bs-whatever="QUITARESTO?@mdo">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--4°card: habilidades, barra progres y boton edicion-->
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-10" medio>
+                    <h5 class="card-title">Hard Skills & Soft Skills</h5>
+                </div>
+                <div class="col-2" editores>
+                    <button tipe="button">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" logo>
+                </div>
+                <div class="col-8" medio>
+                    <p>texto referencia a barra</p>
+                    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 editores"><button tipe="button">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" logo>
+                </div>
+                <div class="col-8" medio>
+                    <p>texto referencia a barra</p>
+                    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 editores"><button tipe="button">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--5°card: proyectos y boton edicion-->
+
+    <div class="card">
+        <div class="card-body">
+
+            <div class="row">
+                <div class="col-10" medio>
+                    <h3 class="card-title">Proyectos</h3>
+                </div>
+                <div class="col-2" editores>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#seccion+-Modal"
+                        data-bs-whatever="QUEHACE?@mdo">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
+                    <p><strong>Some quick example text to build on the card title and make up the bulk
+                            of the card's
+                            content.</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#botonEditarModal"
+                        data-bs-whatever="SACARESTO?@mdo">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#botonBorrarModal"
+                        data-bs-whatever="QUITARESTO?@mdo">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="row" id="filaEspacio">
+                <div class="col-xs-12 col-sm-2" logo>
+                    <img id="lugares-logo" class="logo" src="logo-argprog.png" alt="logo arg programa"></img>
+                </div>
+                <div class="col-xs-12 col-sm-8" id=medio>
+                    <h4 class="card-title">Nombre de Lugares </h4>
+                    <p><strong>Some quick example text to build on the card title and make up the bulk
+                            of the card's
+                            content.</strong></p><strong>
+                    </strong>
+
+                </div>
+                <div class="col-xs-12 col-sm-2" id=editores>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#botonEditarModal"
+                        data-bs-whatever="SACARESTO?@mdo">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button tipe="button" data-bs-toggle="modal" data-bs-target="#botonBorrarModal"
+                        data-bs-whatever="QUITARESTO?@mdo">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--script referencia a js-->
+
+    <script src="codigo.js"></script>
+    <script src="objetos.js"></script>
+
+    <!-- src de script-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

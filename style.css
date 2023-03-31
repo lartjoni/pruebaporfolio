@@ -39,28 +39,64 @@
 .icono-redes a {
     padding: 10px;
     margin: 10px;
-    transition: all 0.2s ease-in;
 }
 
 .icono-redes i {
     color: aqua;
-    font-size: 20px;
-    transition: all 0.2s ease-in;
+    font-size: 25px;
 }
 
 
 .icono-redes i:hover {
-    font-size: 120%;
-    color: coral;
+    font-size: 25px;
+    color: rgb(72, 45, 194);
     border-radius: 100%;
+    transition: all 0.5s ease-in;
 
 }
 
+/*icono login persona (alternativargb(95, 160, 117))*/
 .bi-person-circle {
     margin-top: auto;
     margin-bottom: auto;
     font-size: 2rem;
+    color: rgb(14, 230, 14);
+    transition: all 0.5s ease-in-out;
+}
+
+.bi-person-circle:hover {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 2rem;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.dropdown-item {
+    margin-top: -5%;
+    margin-bottom: -5%;
+    border: 5px solid gray;
+    border-radius: 3px;
+    background-color:rgba(28, 197, 84, 0.747);
+    transition: all 0.5s ease-in-out;
+
+}
+
+/*icono login candado*/
+.bi-person-lock {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 2rem;
     color: red;
+    transition: all 0.5s ease-in-out;
+}
+
+.bi-person-lock:hover {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
 }
 
 .modal-content {
@@ -108,19 +144,18 @@
 
 button {
     border-radius: 100%;
-    color: black;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .bi-pencil {
-    font-size: 120%;
-    transition: all 0.2s ease-in-out;
+    font-size: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 /* "hover" se usa para que entienda el cursor */
 
 button:hover {
-    font-size: 120%;
+    font-size: 100%;
     background-color: gray;
     color: white;
     border-radius: 100%;
@@ -132,7 +167,7 @@ button:hover {
 }
 
 #lugares-logo {
-    border: 2px solid rgb(12, 209, 12);
+    border: 2px solid grey;
 }
 
 p {
