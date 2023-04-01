@@ -72,14 +72,22 @@
     transition: all 0.5s ease-in-out;
 }
 
-.dropdown-item {
+#userDesplego {
     margin-top: -5%;
     margin-bottom: -5%;
     border: 5px solid gray;
     border-radius: 3px;
     background-color:rgba(28, 197, 84, 0.747);
     transition: all 0.5s ease-in-out;
+}
 
+#userDesplego:hover {
+    margin-top: -5%;
+    margin-bottom: -5%;
+    border: 5px solid gray;
+    border-radius: 3px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
 }
 
 /*icono login candado*/
@@ -128,7 +136,7 @@
 }
 
 #logo-derecho-lugar {
-    display: flex;
+    display:flex;
     width: 50px;
     border: 2px solid blue;
 }
@@ -159,6 +167,7 @@ button:hover {
     background-color: gray;
     color: white;
     border-radius: 100%;
+    transition: all 0.5s ease-in-out;
 
 }
 
