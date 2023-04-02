@@ -70,7 +70,7 @@
 
     <!--1°card: banner, foto, info pers, icono y boton edicion-->
 
-    <div class="card">
+    <div class="card" id="card1">
         <img src="fondo1.jpg" class="card-img-top" alt="fondo montaña">
         <div class="container-fluid">
             <div class="row">
@@ -96,17 +96,25 @@
                     Programa</img>
                 </div>
             </div>
-            <div>
-                <a href="#" class="btn btn-primary">Tengo interés en</a>
-                <a href="#" class="card-link">Añadir Sección</a>
-                <a href="#" class="card-link">Mas</a>
-            </div>
+            <div class="btn-group dropend">
+                <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                  Tengo interés en
+                </button>
+                <!--borde color azul (primary, ej verde: success)-->
+                <div class="dropdown-menu border border-primary">
+                    <a class="dropdown-item" href="#deMi">Acerca de Mi</a>
+                    <a class="dropdown-item" href="#experiencia">Experiencia</a>
+                  <a class="dropdown-item" href="#educacion">Educación</a>    
+                  <a class="dropdown-item" href="#skills">Habilidades/Skills</a>    
+                  <a class="dropdown-item" href="#proyectos">Proyectos</a>   
+                </div>
+              </div>
         </div>
     </div>
 
     <!--2°card: acerca de mi y ejemplo de "funcion" edicion-->
 
-    <div class="card">
+    <div class="card" id="deMi">
         <div class="card-body">
 
             <div class="row">
@@ -133,7 +141,7 @@
 
     <!--3°card: experiencia y educacion boton edicion-->
 
-    <div class="card">
+    <div class="card" id="experiencia">
         <div class="card-body">
 
             <div class="row">
@@ -171,7 +179,7 @@
             </div>
             <div class="row">
                 <div class="col-10" medio>
-                    <h3 class="card-title">Educacion</h3>
+                    <h3 class="card-title" id="educacion">Educacion</h3>
                 </div>
                 <div class="col-2" editores>
                     <button tipe="button">
@@ -251,7 +259,7 @@
 
     <!--4°card: habilidades, barra progres y boton edicion-->
 
-    <div class="card">
+    <div class="card" id="skills">
         <div class="card-body">
             <div class="row">
                 <div class="col-10" medio>
@@ -306,7 +314,7 @@
 
     <!--5°card: proyectos y boton edicion-->
 
-    <div class="card">
+    <div class="card" id="proyectos">
         <div class="card-body">
 
             <div class="row">
@@ -368,13 +376,16 @@
         </div>
     </div>
 
-    <!--script referencia a js-->
+    <footer>
+        <div class="d-flex justify-content-center">
+                <a class="border rounded border-primary" href="#card1">Volver a Inicio</a>
+          </div>
+    </footer>
 
+    <!--script referencia a js-->
     <script src="codigo.js"></script>
-    <script src="objetos.js"></script>
 
     <!-- src de script-->
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
